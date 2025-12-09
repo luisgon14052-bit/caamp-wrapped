@@ -9,7 +9,8 @@
     "efectividad_pct": 91.67,
     "clase_mas_llena": {
       "name": "THE LAST DANCE",
-      "max_asistencias": 12
+      "max_asistencias": 12,
+      "fecha": "2025-05-03"
     }
   },
   "Ana Sofía": {
@@ -22,7 +23,8 @@
     "efectividad_pct": 93.29,
     "clase_mas_llena": {
       "name": "BIRTHDAY TRAIN!",
-      "max_asistencias": 16
+      "max_asistencias": 16,
+      "fecha": "2025-12-08"
     }
   },
   "Andrea": {
@@ -35,7 +37,8 @@
     "efectividad_pct": 93.35,
     "clase_mas_llena": {
       "name": "LOWER BODY.",
-      "max_asistencias": 16
+      "max_asistencias": 16,
+      "fecha": "2025-10-04"
     }
   },
   "Baca": {
@@ -48,7 +51,8 @@
     "efectividad_pct": 93.5,
     "clase_mas_llena": {
       "name": "100th class!!!",
-      "max_asistencias": 16
+      "max_asistencias": 16,
+      "fecha": "2025-12-08"
     }
   },
   "Caap": {
@@ -61,7 +65,8 @@
     "efectividad_pct": 93.29,
     "clase_mas_llena": {
       "name": "ALL ABOUT THE CORE",
-      "max_asistencias": 16
+      "max_asistencias": 16,
+      "fecha": "2025-12-09"
     }
   },
   "Fer Barraza": {
@@ -74,7 +79,8 @@
     "efectividad_pct": 90.39,
     "clase_mas_llena": {
       "name": "COMMUNITY TRAIN!",
-      "max_asistencias": 16
+      "max_asistencias": 16,
+      "fecha": "2025-11-08"
     }
   },
   "Guest coach  Mich": {
@@ -87,7 +93,8 @@
     "efectividad_pct": 100.0,
     "clase_mas_llena": {
       "name": "FUNCTIONAL TRAINING",
-      "max_asistencias": 14
+      "max_asistencias": 14,
+      "fecha": "2025-02-08"
     }
   },
   "Guest coach AnaPe!": {
@@ -100,7 +107,8 @@
     "efectividad_pct": 95.24,
     "clase_mas_llena": {
       "name": "UMANA METHOD",
-      "max_asistencias": 12
+      "max_asistencias": 12,
+      "fecha": "2025-09-08"
     }
   },
   "Guest coach Dani!": {
@@ -113,7 +121,8 @@
     "efectividad_pct": 90.62,
     "clase_mas_llena": {
       "name": "ANIMAL FLOW!",
-      "max_asistencias": 10
+      "max_asistencias": 10,
+      "fecha": "2025-08-29"
     }
   },
   "Guest coach Gaby": {
@@ -126,7 +135,8 @@
     "efectividad_pct": 85.71,
     "clase_mas_llena": {
       "name": "PILATES HIIT",
-      "max_asistencias": 15
+      "max_asistencias": 15,
+      "fecha": "2025-02-08"
     }
   },
   "Guest coach Irma": {
@@ -139,7 +149,8 @@
     "efectividad_pct": 97.78,
     "clase_mas_llena": {
       "name": "SUMMER CAAMP! Barre focus upper",
-      "max_asistencias": 16
+      "max_asistencias": 16,
+      "fecha": "2025-12-08"
     }
   },
   "Guest coach Joaquin": {
@@ -152,7 +163,8 @@
     "efectividad_pct": 87.5,
     "clase_mas_llena": {
       "name": "CALISTHENICS!",
-      "max_asistencias": 14
+      "max_asistencias": 14,
+      "fecha": "2025-07-26"
     }
   },
   "Guest coach Karo": {
@@ -165,7 +177,8 @@
     "efectividad_pct": 89.29,
     "clase_mas_llena": {
       "name": "BARRÉ",
-      "max_asistencias": 14
+      "max_asistencias": 14,
+      "fecha": "2025-08-08"
     }
   },
   "Guest coach Kenia": {
@@ -178,7 +191,8 @@
     "efectividad_pct": 96.67,
     "clase_mas_llena": {
       "name": "UMANA METHOD",
-      "max_asistencias": 16
+      "max_asistencias": 16,
+      "fecha": "2025-07-26"
     }
   },
   "Julio": {
@@ -191,7 +205,8 @@
     "efectividad_pct": 91.99,
     "clase_mas_llena": {
       "name": "TRAIN FOR COFFEE!",
-      "max_asistencias": 17
+      "max_asistencias": 17,
+      "fecha": "2025-03-29"
     }
   },
   "Marianna!": {
@@ -204,7 +219,8 @@
     "efectividad_pct": 0.0,
     "clase_mas_llena": {
       "name": "PILATES- full body.",
-      "max_asistencias": 0
+      "max_asistencias": 0,
+      "fecha": "2025-05-03"
     }
   },
   "Misa": {
@@ -217,7 +233,8 @@
     "efectividad_pct": 93.75,
     "clase_mas_llena": {
       "name": "TRAIN FOR COFFEE!",
-      "max_asistencias": 17
+      "max_asistencias": 17,
+      "fecha": "2025-03-29"
     }
   },
   "SOFIT": {
@@ -230,7 +247,8 @@
     "efectividad_pct": 91.98,
     "clase_mas_llena": {
       "name": "COMMUNITY TRAIN!",
-      "max_asistencias": 16
+      "max_asistencias": 16,
+      "fecha": "2025-12-04"
     }
   },
   "Sebas": {
@@ -243,7 +261,8 @@
     "efectividad_pct": 90.56,
     "clase_mas_llena": {
       "name": "FULL BODY",
-      "max_asistencias": 16
+      "max_asistencias": 16,
+      "fecha": "2025-12-08"
     }
   }
 }
