@@ -1,0 +1,249 @@
+{
+  "Adriana": {
+    "name": "Adriana",
+    "clases_impartidas": 14,
+    "total_reservaciones": 84,
+    "total_asistencias": 77,
+    "total_faltas": 7,
+    "total_cancelaciones": 71,
+    "efectividad_pct": 91.67,
+    "clase_mas_llena": {
+      "name": "THE LAST DANCE",
+      "max_asistencias": 12
+    }
+  },
+  "Ana Sofía": {
+    "name": "Ana Sofía",
+    "clases_impartidas": 275,
+    "total_reservaciones": 2756,
+    "total_asistencias": 2571,
+    "total_faltas": 185,
+    "total_cancelaciones": 1724,
+    "efectividad_pct": 93.29,
+    "clase_mas_llena": {
+      "name": "BIRTHDAY TRAIN!",
+      "max_asistencias": 16
+    }
+  },
+  "Andrea": {
+    "name": "Andrea",
+    "clases_impartidas": 109,
+    "total_reservaciones": 1128,
+    "total_asistencias": 1053,
+    "total_faltas": 75,
+    "total_cancelaciones": 726,
+    "efectividad_pct": 93.35,
+    "clase_mas_llena": {
+      "name": "LOWER BODY.",
+      "max_asistencias": 16
+    }
+  },
+  "Baca": {
+    "name": "Baca",
+    "clases_impartidas": 240,
+    "total_reservaciones": 2817,
+    "total_asistencias": 2634,
+    "total_faltas": 183,
+    "total_cancelaciones": 1675,
+    "efectividad_pct": 93.5,
+    "clase_mas_llena": {
+      "name": "100th class!!!",
+      "max_asistencias": 16
+    }
+  },
+  "Caap": {
+    "name": "Caap",
+    "clases_impartidas": 235,
+    "total_reservaciones": 2831,
+    "total_asistencias": 2641,
+    "total_faltas": 190,
+    "total_cancelaciones": 1615,
+    "efectividad_pct": 93.29,
+    "clase_mas_llena": {
+      "name": "ALL ABOUT THE CORE",
+      "max_asistencias": 16
+    }
+  },
+  "Fer Barraza": {
+    "name": "Fer Barraza",
+    "clases_impartidas": 183,
+    "total_reservaciones": 1686,
+    "total_asistencias": 1524,
+    "total_faltas": 162,
+    "total_cancelaciones": 1267,
+    "efectividad_pct": 90.39,
+    "clase_mas_llena": {
+      "name": "COMMUNITY TRAIN!",
+      "max_asistencias": 16
+    }
+  },
+  "Guest coach  Mich": {
+    "name": "Guest coach  Mich",
+    "clases_impartidas": 1,
+    "total_reservaciones": 14,
+    "total_asistencias": 14,
+    "total_faltas": 0,
+    "total_cancelaciones": 19,
+    "efectividad_pct": 100.0,
+    "clase_mas_llena": {
+      "name": "FUNCTIONAL TRAINING",
+      "max_asistencias": 14
+    }
+  },
+  "Guest coach AnaPe!": {
+    "name": "Guest coach AnaPe!",
+    "clases_impartidas": 2,
+    "total_reservaciones": 21,
+    "total_asistencias": 20,
+    "total_faltas": 1,
+    "total_cancelaciones": 34,
+    "efectividad_pct": 95.24,
+    "clase_mas_llena": {
+      "name": "UMANA METHOD",
+      "max_asistencias": 12
+    }
+  },
+  "Guest coach Dani!": {
+    "name": "Guest coach Dani!",
+    "clases_impartidas": 3,
+    "total_reservaciones": 32,
+    "total_asistencias": 29,
+    "total_faltas": 3,
+    "total_cancelaciones": 44,
+    "efectividad_pct": 90.62,
+    "clase_mas_llena": {
+      "name": "ANIMAL FLOW!",
+      "max_asistencias": 10
+    }
+  },
+  "Guest coach Gaby": {
+    "name": "Guest coach Gaby",
+    "clases_impartidas": 2,
+    "total_reservaciones": 28,
+    "total_asistencias": 24,
+    "total_faltas": 4,
+    "total_cancelaciones": 29,
+    "efectividad_pct": 85.71,
+    "clase_mas_llena": {
+      "name": "PILATES HIIT",
+      "max_asistencias": 15
+    }
+  },
+  "Guest coach Irma": {
+    "name": "Guest coach Irma",
+    "clases_impartidas": 3,
+    "total_reservaciones": 45,
+    "total_asistencias": 44,
+    "total_faltas": 1,
+    "total_cancelaciones": 18,
+    "efectividad_pct": 97.78,
+    "clase_mas_llena": {
+      "name": "SUMMER CAAMP! Barre focus upper",
+      "max_asistencias": 16
+    }
+  },
+  "Guest coach Joaquin": {
+    "name": "Guest coach Joaquin",
+    "clases_impartidas": 1,
+    "total_reservaciones": 16,
+    "total_asistencias": 14,
+    "total_faltas": 2,
+    "total_cancelaciones": 9,
+    "efectividad_pct": 87.5,
+    "clase_mas_llena": {
+      "name": "CALISTHENICS!",
+      "max_asistencias": 14
+    }
+  },
+  "Guest coach Karo": {
+    "name": "Guest coach Karo",
+    "clases_impartidas": 2,
+    "total_reservaciones": 28,
+    "total_asistencias": 25,
+    "total_faltas": 3,
+    "total_cancelaciones": 27,
+    "efectividad_pct": 89.29,
+    "clase_mas_llena": {
+      "name": "BARRÉ",
+      "max_asistencias": 14
+    }
+  },
+  "Guest coach Kenia": {
+    "name": "Guest coach Kenia",
+    "clases_impartidas": 2,
+    "total_reservaciones": 30,
+    "total_asistencias": 29,
+    "total_faltas": 1,
+    "total_cancelaciones": 31,
+    "efectividad_pct": 96.67,
+    "clase_mas_llena": {
+      "name": "UMANA METHOD",
+      "max_asistencias": 16
+    }
+  },
+  "Julio": {
+    "name": "Julio",
+    "clases_impartidas": 298,
+    "total_reservaciones": 3009,
+    "total_asistencias": 2768,
+    "total_faltas": 241,
+    "total_cancelaciones": 1876,
+    "efectividad_pct": 91.99,
+    "clase_mas_llena": {
+      "name": "TRAIN FOR COFFEE!",
+      "max_asistencias": 17
+    }
+  },
+  "Marianna!": {
+    "name": "Marianna!",
+    "clases_impartidas": 1,
+    "total_reservaciones": 4,
+    "total_asistencias": 0,
+    "total_faltas": 4,
+    "total_cancelaciones": 6,
+    "efectividad_pct": 0.0,
+    "clase_mas_llena": {
+      "name": "PILATES- full body.",
+      "max_asistencias": 0
+    }
+  },
+  "Misa": {
+    "name": "Misa",
+    "clases_impartidas": 257,
+    "total_reservaciones": 2914,
+    "total_asistencias": 2732,
+    "total_faltas": 182,
+    "total_cancelaciones": 1948,
+    "efectividad_pct": 93.75,
+    "clase_mas_llena": {
+      "name": "TRAIN FOR COFFEE!",
+      "max_asistencias": 17
+    }
+  },
+  "SOFIT": {
+    "name": "SOFIT",
+    "clases_impartidas": 144,
+    "total_reservaciones": 1472,
+    "total_asistencias": 1354,
+    "total_faltas": 118,
+    "total_cancelaciones": 970,
+    "efectividad_pct": 91.98,
+    "clase_mas_llena": {
+      "name": "COMMUNITY TRAIN!",
+      "max_asistencias": 16
+    }
+  },
+  "Sebas": {
+    "name": "Sebas",
+    "clases_impartidas": 177,
+    "total_reservaciones": 1567,
+    "total_asistencias": 1419,
+    "total_faltas": 148,
+    "total_cancelaciones": 1046,
+    "efectividad_pct": 90.56,
+    "clase_mas_llena": {
+      "name": "FULL BODY",
+      "max_asistencias": 16
+    }
+  }
+}
