@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 // ✅ ALIAS DE NOMBRES
 const NAME_ALIASES = {
@@ -34,7 +34,6 @@ const NAME_ALIASES = {
   'sebas': 'Sebas'
 };
 
-// ✅ NORMALIZADOR (acentos, mayúsculas, espacios)
 function normalizeName(str) {
   return (str || '')
     .toLowerCase()
@@ -48,6 +47,7 @@ export default function Home() {
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
   const [activated, setActivated] = useState(false);
+  const audioRef = useRef(null);
 
   async function buscar(e) {
     e.preventDefault();
@@ -73,13 +73,24 @@ export default function Home() {
     }
   }
 
+  function handleActivateAudio() {
+    if (activated) return;
+    const audio = audioRef.current;
+    if (audio) {
+      audio.muted = false;
+      audio
+        .play()
+        .then(() => {
+          setActivated(true);
+        })
+        .catch(() => {
+          // si el navegador no deja, no truena la app
+        });
+    }
+  }
+
   return (
     <>
-      {/* 🎧 MÚSICA AUTOPLAY CON ACTIVACIÓN POR CLICK */}
-      <audio id="bg-music" loop muted autoPlay>
-        <source src="/musica.mp3" type="audio/mpeg" />
-      </audio>
-
       <style jsx global>{`
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(20px) scale(0.98); }
@@ -98,16 +109,19 @@ export default function Home() {
 
       <div
         style={styles.bg}
-        onClick={() => {
-          if (activated) return;
-          const audio = document.getElementById('bg-music');
-          if (audio) {
-            audio.muted = false;
-            audio.play();
-          }
-          setActivated(true);
-        }}
+        onClick={handleActivateAudio}
       >
+        {/* 🎧 AUDIO CARGADO DESDE /public */}
+        <audio
+          ref={audioRef}
+          loop
+          muted
+          autoPlay
+          playsInline
+        >
+          <source src="/musica.mp3" type="audio/mpeg" />
+        </audio>
+
         {!data && (
           <div style={styles.center}>
             <div style={styles.logoWrap}>
