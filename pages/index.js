@@ -41,13 +41,24 @@ export default function Home() {
             box-shadow: 0 0 24px rgba(0, 255, 156, 0.35);
           }
         }
+        @keyframes gradientMove {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
       `}</style>
 
       <div style={styles.bg}>
         {/* PANTALLA 1: INPUT */}
         {!data && (
           <div style={styles.center}>
-            {/* Logo Caamp (opcional pero recomendado) */}
+            {/* Logo Caamp */}
             <div style={styles.logoWrap}>
               <img
                 src="/caamp-logo.png"
@@ -106,7 +117,8 @@ export default function Home() {
             <div
               style={{
                 ...styles.cardMain,
-                animation: 'fadeUp 800ms ease-out forwards, glow 2s ease-in-out infinite alternate'
+                animation:
+                  'fadeUp 800ms ease-out forwards, glow 2s ease-in-out infinite alternate'
               }}
             >
               <p style={styles.cardLabelDark}>Tu clase más llena</p>
@@ -130,7 +142,9 @@ const styles = {
   bg: {
     minHeight: '100vh',
     background:
-      'radial-gradient(circle at top, #00ff9c22 0, transparent 60%), radial-gradient(circle at bottom, #00b8ff22 0, #050505 60%)',
+      'linear-gradient(120deg, #050505, #003b2f, #00ff9c33, #003b2f, #050505)',
+    backgroundSize: '300% 300%',
+    animation: 'gradientMove 18s ease-in-out infinite',
     color: '#fff',
     fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif',
     padding: 30,
@@ -184,8 +198,7 @@ const styles = {
     padding: 14,
     borderRadius: 999,
     border: 'none',
-    background:
-      'linear-gradient(120deg, #00ff9c, #00c97b)',
+    background: 'linear-gradient(120deg, #00ff9c, #00c97b)',
     color: '#000',
     fontWeight: 700,
     fontSize: 16,
@@ -249,8 +262,7 @@ const styles = {
   },
   cardMain: {
     marginTop: 16,
-    background:
-      'linear-gradient(135deg, #00ff9c, #00c97b)',
+    background: 'linear-gradient(135deg, #00ff9c, #00c97b)',
     borderRadius: 22,
     padding: 22,
     color: '#000',
