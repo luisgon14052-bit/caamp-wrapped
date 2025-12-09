@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 export default function Home() {
@@ -16,31 +15,136 @@ export default function Home() {
       setData(json);
     } catch (err) {
       setError('Nombre no encontrado');
+      setData(null);
     }
   }
 
   return (
-    <div style={{ background:'#041124', minHeight:'100vh', color:'#fff', padding:40 }}>
-      <h1>Caamp Coaches Wrapped 2025</h1>
-
-      <form onSubmit={buscar}>
-        <input value={name} onChange={e=>setName(e.target.value)} placeholder="Escribe tu nombre" />
-        <button>Ver mi Wrapped</button>
-      </form>
-
-      {error && <p>{error}</p>}
+    <div style={styles.bg}>
+      {!data && (
+        <div style={styles.center}>
+          <h1 style={styles.title}>Tu año en movimiento</h1>
+          <form onSubmit={buscar} style={styles.form}>
+            <input
+              style={styles.input}
+              value={name}
+              onChange={e => setName(e.target.value)}
+              placeholder="Escribe tu nombre"
+            />
+            <button style={styles.button}>Ver mi Wrapped</button>
+          </form>
+          {error && <p style={{ color: '#ff7676' }}>{error}</p>}
+        </div>
+      )}
 
       {data && (
-        <div style={{ marginTop:30 }}>
-          <h2>{data.name}</h2>
-          <p>Clases: {data.clases_impartidas}</p>
-          <p>Reservaciones: {data.total_reservaciones}</p>
-          <p>Asistencias: {data.total_asistencias}</p>
-          <p>Efectividad: {data.efectividad_pct}%</p>
-          <h3>Clase más llena:</h3>
-          <p>{data.clase_mas_llena.name} — {data.clase_mas_llena.max_asistencias}</p>
+        <div style={styles.cards}>
+          <h2 style={styles.name}>{data.name}</h2>
+
+          <div style={styles.card}>
+            <p>Clases impartidas</p>
+            <span>{data.clases_impartidas}</span>
+          </div>
+
+          <div style={styles.card}>
+            <p>Asistencias generadas</p>
+            <span>{data.total_asistencias}</span>
+          </div>
+
+          <div style={styles.card}>
+            <p>Efectividad</p>
+            <span>{data.efectividad_pct}%</span>
+          </div>
+
+          <div style={styles.cardMain}>
+            <p>Tu clase más llena</p>
+            <strong>{data.clase_mas_llena.name}</strong>
+            <span>{data.clase_mas_llena.max_asistencias} personas</span>
+          </div>
+
+          <button style={styles.back} onClick={() => setData(null)}>
+            Ver de nuevo
+          </button>
         </div>
       )}
     </div>
   );
 }
+
+const styles = {
+  bg: {
+    minHeight: '100vh',
+    background: 'linear-gradient(160deg, #050505 0%, #003b2f 100%)',
+    color: '#fff',
+    fontFamily: 'Arial, sans-serif',
+    padding: 30,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  center: {
+    textAlign: 'center',
+    width: '100%',
+    maxWidth: 380
+  },
+  title: {
+    fontSize: 36,
+    fontWeight: 800,
+    marginBottom: 20
+  },
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 12
+  },
+  input: {
+    padding: 14,
+    borderRadius: 10,
+    border: 'none',
+    fontSize: 16
+  },
+  button: {
+    padding: 14,
+    borderRadius: 10,
+    border: 'none',
+    background: '#00ff9c',
+    color: '#000',
+    fontWeight: 700,
+    fontSize: 16,
+    cursor: 'pointer'
+  },
+  cards: {
+    width: '100%',
+    maxWidth: 400,
+    textAlign: 'center'
+  },
+  name: {
+    fontSize: 32,
+    marginBottom: 30
+  },
+  card: {
+    background: '#0f0f0f',
+    borderRadius: 18,
+    padding: 22,
+    marginBottom: 14,
+    fontSize: 18
+  },
+  cardMain: {
+    background: 'linear-gradient(120deg, #00ff9c, #00c97b)',
+    color: '#000',
+    borderRadius: 22,
+    padding: 26,
+    marginTop: 20,
+    fontSize: 18,
+    fontWeight: 800
+  },
+  back: {
+    marginTop: 20,
+    background: 'transparent',
+    border: '1px solid #00ff9c',
+    color: '#00ff9c',
+    padding: 12,
+    borderRadius: 10,
+    cursor: 'pointer'
+  }
+};
