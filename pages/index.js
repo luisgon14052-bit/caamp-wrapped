@@ -47,6 +47,7 @@ export default function Home() {
   const [name, setName] = useState('');
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
+  const [activated, setActivated] = useState(false);
 
   async function buscar(e) {
     e.preventDefault();
@@ -74,6 +75,11 @@ export default function Home() {
 
   return (
     <>
+      {/* 🎧 MÚSICA AUTOPLAY CON ACTIVACIÓN POR CLICK */}
+      <audio id="bg-music" loop muted autoPlay>
+        <source src="/musica.mp3" type="audio/mpeg" />
+      </audio>
+
       <style jsx global>{`
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(20px) scale(0.98); }
@@ -90,7 +96,18 @@ export default function Home() {
         }
       `}</style>
 
-      <div style={styles.bg}>
+      <div
+        style={styles.bg}
+        onClick={() => {
+          if (activated) return;
+          const audio = document.getElementById('bg-music');
+          if (audio) {
+            audio.muted = false;
+            audio.play();
+          }
+          setActivated(true);
+        }}
+      >
         {!data && (
           <div style={styles.center}>
             <div style={styles.logoWrap}>
